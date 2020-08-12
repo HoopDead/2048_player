@@ -22,7 +22,7 @@ def get_values_from_tiles():
 """
 Desc: Modify list_of_tiles to get tile value and its position, String with 3 values - the first value is tile value, the second is positon in x-axis and third is also position in y-axis
 In: List of tiles
-Out: Dict with value, x-pos and y-pos
+Out: 2D Array (Matrix) of actual situation in tile container
 """
 def modify_list_of_tiles(list_of_tiles):
     rows, cols = (4, 4) 
