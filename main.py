@@ -104,6 +104,7 @@ def check_move_left(list_of_tile_informations):
                 # as sum of two same element. 
                 w.append(2 * v[j]) 
                 j += 1
+                list_of_operation["moved"] = 1
               
             else: 
                 w.append(v[j]) 
@@ -182,17 +183,16 @@ if __name__ == "__main__":
         main_window = driver.find_element_by_tag_name("body")
         move_score = {"up": up_moves["moved"], "down": down_moves["moved"], "left": left_moves["moved"]}
         print(move_score)
-        # if(move_score["up"] > move_score["down"] and move_score["up"] > move_score["left"]):
-            # main_window.send_keys(Keys.ARROW_UP)
-            # print("Algorithm move up")
-        # elif(move_score["down"] > move_score["up"] and move_score["down"] > move_score["left"]):
-            # main_window.send_keys(Keys.ARROW_DOWN)
-            # print("Algorithm move down")
-        # elif(move_score["left"] > move_score["down"] and move_score["left"] > move_score["up"]):
-            # main_window.send_keys(Keys.ARROW_LEFT)
-            # print("Algorithm move left")
-        # else:
-        #     random_move(main_window)
+        if(move_score["up"] > move_score["down"] and move_score["up"] > move_score["left"]):
+            main_window.send_keys(Keys.ARROW_UP)
+            print("Algorithm move up")
+        elif(move_score["down"] > move_score["up"] and move_score["down"] > move_score["left"]):
+            main_window.send_keys(Keys.ARROW_DOWN)
+            print("Algorithm move down")
+        elif(move_score["left"] > move_score["down"] and move_score["left"] > move_score["up"]):
+            main_window.send_keys(Keys.ARROW_LEFT)
+            print("Algorithm move left")
+        else:
+            random_move(main_window)
         time.sleep(0.5)
-        Game = False
         
