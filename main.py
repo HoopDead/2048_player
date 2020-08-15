@@ -89,7 +89,6 @@ def check_move_left(list_of_tile_informations):
             # If not 0 
             if (list_of_tile_informations[i][j]): 
                 v.append(list_of_tile_informations[i][j]) 
-        print(v)
         # For each temporary array 
         j = 0
         while(j < len(v)): 
@@ -117,7 +116,6 @@ def check_move_left(list_of_tile_informations):
         for it in w: 
             list_of_tile_informations[i][j] = it 
             j += 1
-    print("LEFT MOVES", list_of_tile_informations)
     return list_of_operation
 
 def check_move_right(list_of_tile_informations):
@@ -155,6 +153,7 @@ def check_move_right(list_of_tile_informations):
         for it in w: 
             list_of_tile_informations[i][j] = it 
             j -= 1
+    print("RIGHT: ", list_of_tile_informations)
     return list_of_operation
 
 def check_move_down(list_of_tile_informations):
@@ -232,8 +231,8 @@ if __name__ == "__main__":
         print(list_of_tile_informations_transpose)
         up_moves = check_move_up(list_of_tile_informations_transpose)
         down_moves = check_move_down(list_of_tile_informations_transpose)
-        left_moves = check_move_left(list_of_tile_informations_transpose)
-        right_moves = check_move_right(list_of_tile_informations_transpose)
+        left_moves = check_move_left(list_of_tile_informations)
+        right_moves = check_move_right(list_of_tile_informations)
         check_moves(up_moves, down_moves, left_moves, right_moves, np.count_nonzero(list_of_tile_informations))
         # move_score = {"up": up_moves["moved"]+up_moves["merged"], "down": down_moves["moved"]+down_moves["merged"], "left": left_moves["moved"]+left_moves["merged"], "right": right_moves["moved"] + right_moves["merged"]}
         # print(move_score)
