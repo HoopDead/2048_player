@@ -41,7 +41,7 @@ def modify_list_of_tiles(list_of_tiles):
 
 def check_move_up(list_of_tile_informations):
     n = len(list_of_tile_informations)
-    list_of_operation = {"merged": 0, "moved": 0}
+    list_of_operation = {"merged": 0, "tiles_after_move": 0}
     for i in range(n): 
         v = [] 
         w = [] 
@@ -58,10 +58,11 @@ def check_move_up(list_of_tile_informations):
                   
                 w.append(2 * v[j]) 
                 j += 1
-                list_of_operation["moved"] = 1
+                list_of_operation["merged"] += 1
               
             else: 
                 w.append(v[j])
+                list_of_operation["tiles_after_move"] += 1
             j += 1
   
         for j in range(n): 
@@ -72,31 +73,27 @@ def check_move_up(list_of_tile_informations):
         for it in w: 
             list_of_tile_informations[j][i] = it 
             j += 1
-    print("UP MOVES", list_of_tile_informations)
+    # print("UP MOVES", list_of_tile_informations)
     return list_of_operation
     
 def check_move_left(list_of_tile_informations):
     n = len(list_of_tile_informations)
-    list_of_operation = {"merged": 0, "moved": 0}
+    list_of_operation = {"merged": 0, "tiles_after_move": 0}
     # For each row 
     for i in range(n): 
         v = [] 
         w = [] 
 
-        # For each element of the 
-        # row from left to right 
         for j in range(n): 
               
             # If not 0 
             if (list_of_tile_informations[i][j]): 
                 v.append(list_of_tile_informations[i][j]) 
-
+        print(v)
         # For each temporary array 
         j = 0
         while(j < len(v)): 
               
-            # If two element have same 
-            # value at consecutive position. 
             if (j < len(v) - 1 and 
                v[j] == v[j + 1]): 
                   
@@ -104,11 +101,11 @@ def check_move_left(list_of_tile_informations):
                 # as sum of two same element. 
                 w.append(2 * v[j]) 
                 j += 1
-                list_of_operation["moved"] = 1
+                list_of_operation["merged"] += 1
               
             else: 
                 w.append(v[j]) 
-                  
+                list_of_operation["tiles_after_move"] += 1
             j += 1
 
         # Filling the each row element to 0. 
@@ -123,9 +120,46 @@ def check_move_left(list_of_tile_informations):
     print("LEFT MOVES", list_of_tile_informations)
     return list_of_operation
 
+def check_move_right(list_of_tile_informations):
+    n = len(list_of_tile_informations)
+    list_of_operation = {"merged": 0, "tiles_after_move": 0}
+    for i in range(n):
+        v = [] 
+        w = [] 
+
+        for j in range(n - 1, -1, -1): 
+              
+            # if not 0 
+            if (list_of_tile_informations[i][j]): 
+                v.append(list_of_tile_informations[i][j])
+  
+        j = 0
+        while (j < len(v)): 
+            if (j < len(v) - 1 and 
+               v[j] == v[j + 1]): 
+                  
+                w.append(2 * v[j]) 
+                j += 1
+                list_of_operation["merged"] += 1
+              
+            else: 
+                w.append(v[j]) 
+                list_of_operation["tiles_after_move"] += 1
+            j += 1
+  
+        for j in range(n): 
+            list_of_tile_informations[i][j] = 0
+  
+        j = n - 1
+   
+        for it in w: 
+            list_of_tile_informations[i][j] = it 
+            j -= 1
+    return list_of_operation
+
 def check_move_down(list_of_tile_informations):
     n = len(list_of_tile_informations)
-    list_of_operation = {"merged": 0, "moved": 0}
+    list_of_operation = {"merged": 0, "tiles_after_move": 0}
     for i in range(n): 
         v = [] 
         w = [] 
@@ -139,9 +173,10 @@ def check_move_down(list_of_tile_informations):
                 and v[j] == v[j + 1]): 
                 w.append(2 * v[j]) 
                 j += 1
-                list_of_operation["moved"] = 1
+                list_of_operation["merged"] += 1
             else: 
                 w.append(v[j])
+                list_of_operation["tiles_after_move"] += 1
             j += 1
                   
         for j in range(n): 
@@ -151,7 +186,7 @@ def check_move_down(list_of_tile_informations):
         for it in w: 
             list_of_tile_informations[j][i] = it
             j -= 1
-    print("DOWN MOVES", list_of_tile_informations)
+    # print("DOWN MOVES", list_of_tile_informations)
     return list_of_operation
 
 def random_move(window):
@@ -170,29 +205,52 @@ def random_move(window):
         print("Random move up")
 Game = True
 
+def check_moves(up_moves, down_moves, left_moves, right_moves, number_of_tiles_on_board):
+    possible_moves = {"up": False, "down": False, "left": False, "right": False}
+    moves_score = {"up": 0, "down": 0, "left": 0, "right": 0}
+    if(up_moves["tiles_after_move"] != number_of_tiles_on_board):
+        possible_moves["up"] = True
+        moves_score["up"] = up_moves["merged"]
+    elif(down_moves["tiles_after_move"] != number_of_tiles_on_board):
+        possible_moves["down"] = True
+        moves_score["down"] = down_moves["merged"]
+    elif(left_moves["tiles_after_move"] != number_of_tiles_on_board):
+        possible_moves["left"] = True
+        moves_score["left"] = left_moves["merged"]
+    elif(right_moves["tiles_after_move"] != number_of_tiles_on_board):
+        possible_moves["right"] = True
+        moves_score["left"] = right_moves["merged"]
+    print(possible_moves, moves_score)
+
 if __name__ == "__main__":
     print("Im working!")
+    moves = {"random": 0, "algo": 0}
     while Game:
         list_of_tiles = get_values_from_tiles()
         list_of_tile_informations = modify_list_of_tiles(list_of_tiles)
-        list_of_tile_informations = np.transpose(list_of_tile_informations)
-        print(list_of_tile_informations)
-        up_moves = check_move_up(list_of_tile_informations)
-        down_moves = check_move_down(list_of_tile_informations)
-        left_moves = check_move_left(list_of_tile_informations)
-        main_window = driver.find_element_by_tag_name("body")
-        move_score = {"up": up_moves["moved"], "down": down_moves["moved"], "left": left_moves["moved"]}
-        print(move_score)
-        if(move_score["up"] > move_score["down"] and move_score["up"] > move_score["left"]):
-            main_window.send_keys(Keys.ARROW_UP)
-            print("Algorithm move up")
-        elif(move_score["down"] > move_score["up"] and move_score["down"] > move_score["left"]):
-            main_window.send_keys(Keys.ARROW_DOWN)
-            print("Algorithm move down")
-        elif(move_score["left"] > move_score["down"] and move_score["left"] > move_score["up"]):
-            main_window.send_keys(Keys.ARROW_LEFT)
-            print("Algorithm move left")
-        else:
-            random_move(main_window)
-        time.sleep(0.5)
+        list_of_tile_informations_transpose = np.transpose(list_of_tile_informations)
+        print(list_of_tile_informations_transpose)
+        up_moves = check_move_up(list_of_tile_informations_transpose)
+        down_moves = check_move_down(list_of_tile_informations_transpose)
+        left_moves = check_move_left(list_of_tile_informations_transpose)
+        right_moves = check_move_right(list_of_tile_informations_transpose)
+        check_moves(up_moves, down_moves, left_moves, right_moves, np.count_nonzero(list_of_tile_informations))
+        # move_score = {"up": up_moves["moved"]+up_moves["merged"], "down": down_moves["moved"]+down_moves["merged"], "left": left_moves["moved"]+left_moves["merged"], "right": right_moves["moved"] + right_moves["merged"]}
+        # print(move_score)
+        # if(move_score["up"] > move_score["down"] and move_score["up"] > move_score["left"]):
+        #     main_window.send_keys(Keys.ARROW_UP)
+        #     print("Algorithm move up")
+        #     moves["algo"] += 1
+        # elif(move_score["down"] > move_score["up"] and move_score["down"] > move_score["left"]):
+        #     main_window.send_keys(Keys.ARROW_DOWN)
+        #     print("Algorithm move down")
+        #     moves["algo"] += 1
+        # elif(move_score["left"] > move_score["down"] and move_score["left"] > move_score["up"]):
+        #     main_window.send_keys(Keys.ARROW_LEFT)
+        #     print("Algorithm move left")
+        #     moves["algo"] += 1
+        # else:
+        #     random_move(main_window)
+        #     moves["random"] += 1
+        time.sleep(0.25)
         
