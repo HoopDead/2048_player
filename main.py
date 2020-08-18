@@ -55,7 +55,6 @@ def random_move(window):
     if (a == 4):
         window.send_keys(Keys.ARROW_UP)
         print("Random move up")
-Game = True
 
 def check_moves(up_moves, down_moves, left_moves, right_moves, number_of_tiles_on_board):
     possible_moves = {"up": False, "down": False, "left": False, "right": False}
@@ -120,6 +119,7 @@ def write_json(data, filename='results.json'):
     with open(filename,'w') as f: 
         json.dump(data, f, indent=4) 
       
+Game = True
 
 
 if __name__ == "__main__":
