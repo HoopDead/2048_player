@@ -1,7 +1,8 @@
 arr = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [1, 1, 1]
+    [2, 0, 0, 0],
+    [0, 0, 2, 0],
+    [0, 4, 2, 2],
+    [0, 0, 2, 2]
 ]
 
 print(arr)
@@ -19,7 +20,6 @@ def check_move_left(list_of_tile_informations):
             # If not 0 
             if (list_of_tile_informations[i][j]): 
                 v.append(list_of_tile_informations[i][j]) 
-        print(v)
         # For each temporary array 
         j = 0
         while(j < len(v)): 
