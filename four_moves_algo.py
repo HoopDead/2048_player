@@ -6,8 +6,6 @@ import numpy as np
 from random import randint
 import json
 
-Game = True
-
 
 driver = webdriver.Chrome('/mnt/d/Programs/Projekty/2048_player/chromedriver.exe')
 driver.get('https://play2048.co/')
@@ -46,17 +44,23 @@ def write_json(data, filename='results.json'):
     with open(filename,'w') as f: 
         json.dump(data, f, indent=4) 
 
+Game = True
+
+
 if __name__ == "__main__":
     print("Im working!")
     moves = {"number_of_moves": 0, "highest-tile": 2}
     main_window = driver.find_element_by_tag_name("body")
     while Game:
         main_window.send_keys(Keys.ARROW_UP)
-        time.sleep(0.1)
+        time.sleep(0.2)
         main_window.send_keys(Keys.ARROW_LEFT)
-        time.sleep(0.1)
+        time.sleep(0.2)
         main_window.send_keys(Keys.ARROW_DOWN)
-        time.sleep(0.1)
+        time.sleep(0.2)
+        main_window.send_keys(Keys.ARROW_RIGHT)
+        time.sleep(0.2)
         moves["number_of_moves"] += 1
         moves["highest-tile"] = modify_list_of_tiles(get_max_value_from_tiles())
+        print(moves)
         check_if_game_over()

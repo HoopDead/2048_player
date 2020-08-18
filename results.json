@@ -1,5 +1,1326 @@
 {
-    "algorithm_results": [],
-    "random_results": [],
-    "three_moves_results": []
+    "algorithm_results": [
+        {
+            "random": 59,
+            "algo": 123,
+            "highest-tile": 128,
+            "number_of_moves": 182
+        },
+        {
+            "random": 45,
+            "algo": 70,
+            "highest-tile": 64,
+            "number_of_moves": 115
+        },
+        {
+            "random": 86,
+            "algo": 174,
+            "highest-tile": 256,
+            "number_of_moves": 260
+        },
+        {
+            "random": 90,
+            "algo": 165,
+            "highest-tile": 256,
+            "number_of_moves": 255
+        },
+        {
+            "random": 63,
+            "algo": 125,
+            "highest-tile": 128,
+            "number_of_moves": 188
+        },
+        {
+            "random": 69,
+            "algo": 117,
+            "highest-tile": 128,
+            "number_of_moves": 186
+        },
+        {
+            "random": 110,
+            "algo": 186,
+            "highest-tile": 256,
+            "number_of_moves": 296
+        },
+        {
+            "random": 66,
+            "algo": 100,
+            "highest-tile": 128,
+            "number_of_moves": 166
+        },
+        {
+            "random": 70,
+            "algo": 122,
+            "highest-tile": 128,
+            "number_of_moves": 192
+        },
+        {
+            "random": 75,
+            "algo": 130,
+            "highest-tile": 128,
+            "number_of_moves": 205
+        },
+        {
+            "random": 75,
+            "algo": 171,
+            "highest-tile": 256,
+            "number_of_moves": 246
+        },
+        {
+            "random": 50,
+            "algo": 112,
+            "highest-tile": 128,
+            "number_of_moves": 162
+        },
+        {
+            "random": 72,
+            "algo": 185,
+            "highest-tile": 256,
+            "number_of_moves": 257
+        },
+        {
+            "random": 93,
+            "algo": 161,
+            "highest-tile": 256,
+            "number_of_moves": 254
+        },
+        {
+            "random": 77,
+            "algo": 151,
+            "highest-tile": 256,
+            "number_of_moves": 228
+        },
+        {
+            "random": 58,
+            "algo": 107,
+            "highest-tile": 128,
+            "number_of_moves": 165
+        },
+        {
+            "random": 39,
+            "algo": 63,
+            "highest-tile": 64,
+            "number_of_moves": 102
+        },
+        {
+            "random": 42,
+            "algo": 108,
+            "highest-tile": 128,
+            "number_of_moves": 150
+        },
+        {
+            "random": 46,
+            "algo": 111,
+            "highest-tile": 128,
+            "number_of_moves": 157
+        },
+        {
+            "random": 107,
+            "algo": 176,
+            "highest-tile": 256,
+            "number_of_moves": 283
+        },
+        {
+            "random": 62,
+            "algo": 137,
+            "highest-tile": 256,
+            "number_of_moves": 199
+        },
+        {
+            "random": 47,
+            "algo": 96,
+            "highest-tile": 64,
+            "number_of_moves": 143
+        },
+        {
+            "random": 56,
+            "algo": 111,
+            "highest-tile": 128,
+            "number_of_moves": 167
+        },
+        {
+            "random": 50,
+            "algo": 103,
+            "highest-tile": 128,
+            "number_of_moves": 153
+        },
+        {
+            "random": 78,
+            "algo": 157,
+            "highest-tile": 256,
+            "number_of_moves": 235
+        },
+        {
+            "random": 64,
+            "algo": 108,
+            "highest-tile": 128,
+            "number_of_moves": 172
+        },
+        {
+            "random": 59,
+            "algo": 108,
+            "highest-tile": 128,
+            "number_of_moves": 167
+        },
+        {
+            "random": 73,
+            "algo": 116,
+            "highest-tile": 128,
+            "number_of_moves": 189
+        },
+        {
+            "random": 70,
+            "algo": 126,
+            "highest-tile": 256,
+            "number_of_moves": 196
+        },
+        {
+            "random": 86,
+            "algo": 199,
+            "highest-tile": 256,
+            "number_of_moves": 285
+        },
+        {
+            "random": 86,
+            "algo": 162,
+            "highest-tile": 256,
+            "number_of_moves": 248
+        },
+        {
+            "random": 78,
+            "algo": 167,
+            "highest-tile": 256,
+            "number_of_moves": 245
+        },
+        {
+            "random": 41,
+            "algo": 76,
+            "highest-tile": 64,
+            "number_of_moves": 117
+        },
+        {
+            "random": 108,
+            "algo": 191,
+            "highest-tile": 256,
+            "number_of_moves": 299
+        },
+        {
+            "random": 30,
+            "algo": 70,
+            "highest-tile": 64,
+            "number_of_moves": 100
+        },
+        {
+            "random": 80,
+            "algo": 151,
+            "highest-tile": 128,
+            "number_of_moves": 231
+        },
+        {
+            "random": 72,
+            "algo": 107,
+            "highest-tile": 128,
+            "number_of_moves": 179
+        },
+        {
+            "random": 54,
+            "algo": 99,
+            "highest-tile": 128,
+            "number_of_moves": 153
+        },
+        {
+            "random": 36,
+            "algo": 83,
+            "highest-tile": 128,
+            "number_of_moves": 119
+        },
+        {
+            "random": 60,
+            "algo": 124,
+            "highest-tile": 256,
+            "number_of_moves": 184
+        },
+        {
+            "random": 69,
+            "algo": 150,
+            "highest-tile": 256,
+            "number_of_moves": 219
+        },
+        {
+            "random": 53,
+            "algo": 97,
+            "highest-tile": 128,
+            "number_of_moves": 150
+        },
+        {
+            "random": 61,
+            "algo": 111,
+            "highest-tile": 128,
+            "number_of_moves": 172
+        },
+        {
+            "random": 62,
+            "algo": 128,
+            "highest-tile": 128,
+            "number_of_moves": 190
+        },
+        {
+            "random": 54,
+            "algo": 101,
+            "highest-tile": 128,
+            "number_of_moves": 155
+        },
+        {
+            "random": 49,
+            "algo": 73,
+            "highest-tile": 64,
+            "number_of_moves": 122
+        },
+        {
+            "random": 55,
+            "algo": 103,
+            "highest-tile": 128,
+            "number_of_moves": 158
+        },
+        {
+            "random": 58,
+            "algo": 89,
+            "highest-tile": 128,
+            "number_of_moves": 147
+        },
+        {
+            "random": 60,
+            "algo": 123,
+            "highest-tile": 128,
+            "number_of_moves": 183
+        },
+        {
+            "random": 86,
+            "algo": 174,
+            "highest-tile": 256,
+            "number_of_moves": 260
+        },
+        {
+            "random": 39,
+            "algo": 73,
+            "highest-tile": 64,
+            "number_of_moves": 112
+        },
+        {
+            "random": 57,
+            "algo": 88,
+            "highest-tile": 128,
+            "number_of_moves": 145
+        },
+        {
+            "random": 65,
+            "algo": 150,
+            "highest-tile": 256,
+            "number_of_moves": 215
+        },
+        {
+            "random": 93,
+            "algo": 168,
+            "highest-tile": 256,
+            "number_of_moves": 261
+        },
+        {
+            "random": 52,
+            "algo": 106,
+            "highest-tile": 128,
+            "number_of_moves": 158
+        },
+        {
+            "random": 51,
+            "algo": 98,
+            "highest-tile": 128,
+            "number_of_moves": 149
+        },
+        {
+            "random": 51,
+            "algo": 116,
+            "highest-tile": 128,
+            "number_of_moves": 167
+        },
+        {
+            "random": 50,
+            "algo": 93,
+            "highest-tile": 128,
+            "number_of_moves": 143
+        },
+        {
+            "random": 50,
+            "algo": 96,
+            "highest-tile": 128,
+            "number_of_moves": 146
+        },
+        {
+            "random": 63,
+            "algo": 119,
+            "highest-tile": 128,
+            "number_of_moves": 182
+        },
+        {
+            "random": 61,
+            "algo": 162,
+            "highest-tile": 128,
+            "number_of_moves": 223
+        },
+        {
+            "random": 81,
+            "algo": 144,
+            "highest-tile": 128,
+            "number_of_moves": 225
+        },
+        {
+            "random": 50,
+            "algo": 108,
+            "highest-tile": 128,
+            "number_of_moves": 158
+        },
+        {
+            "random": 56,
+            "algo": 109,
+            "highest-tile": 128,
+            "number_of_moves": 165
+        },
+        {
+            "random": 75,
+            "algo": 151,
+            "highest-tile": 128,
+            "number_of_moves": 226
+        },
+        {
+            "random": 87,
+            "algo": 175,
+            "highest-tile": 256,
+            "number_of_moves": 262
+        },
+        {
+            "random": 66,
+            "algo": 134,
+            "highest-tile": 128,
+            "number_of_moves": 200
+        },
+        {
+            "random": 76,
+            "algo": 133,
+            "highest-tile": 128,
+            "number_of_moves": 209
+        },
+        {
+            "random": 91,
+            "algo": 168,
+            "highest-tile": 256,
+            "number_of_moves": 259
+        },
+        {
+            "random": 71,
+            "algo": 154,
+            "highest-tile": 128,
+            "number_of_moves": 225
+        },
+        {
+            "random": 70,
+            "algo": 137,
+            "highest-tile": 256,
+            "number_of_moves": 207
+        },
+        {
+            "random": 52,
+            "algo": 103,
+            "highest-tile": 128,
+            "number_of_moves": 155
+        },
+        {
+            "random": 63,
+            "algo": 117,
+            "highest-tile": 128,
+            "number_of_moves": 180
+        },
+        {
+            "random": 97,
+            "algo": 183,
+            "highest-tile": 256,
+            "number_of_moves": 280
+        },
+        {
+            "random": 46,
+            "algo": 62,
+            "highest-tile": 64,
+            "number_of_moves": 108
+        },
+        {
+            "random": 75,
+            "algo": 175,
+            "highest-tile": 128,
+            "number_of_moves": 250
+        },
+        {
+            "random": 41,
+            "algo": 78,
+            "highest-tile": 64,
+            "number_of_moves": 119
+        },
+        {
+            "random": 62,
+            "algo": 132,
+            "highest-tile": 128,
+            "number_of_moves": 194
+        },
+        {
+            "random": 63,
+            "algo": 101,
+            "highest-tile": 128,
+            "number_of_moves": 164
+        },
+        {
+            "random": 58,
+            "algo": 104,
+            "highest-tile": 64,
+            "number_of_moves": 162
+        },
+        {
+            "random": 80,
+            "algo": 134,
+            "highest-tile": 128,
+            "number_of_moves": 214
+        },
+        {
+            "random": 64,
+            "algo": 142,
+            "highest-tile": 128,
+            "number_of_moves": 206
+        },
+        {
+            "random": 59,
+            "algo": 87,
+            "highest-tile": 128,
+            "number_of_moves": 146
+        },
+        {
+            "random": 60,
+            "algo": 124,
+            "highest-tile": 128,
+            "number_of_moves": 184
+        },
+        {
+            "random": 74,
+            "algo": 153,
+            "highest-tile": 256,
+            "number_of_moves": 227
+        },
+        {
+            "random": 92,
+            "algo": 214,
+            "highest-tile": 256,
+            "number_of_moves": 306
+        },
+        {
+            "random": 72,
+            "algo": 114,
+            "highest-tile": 128,
+            "number_of_moves": 186
+        },
+        {
+            "random": 57,
+            "algo": 115,
+            "highest-tile": 128,
+            "number_of_moves": 172
+        },
+        {
+            "random": 31,
+            "algo": 71,
+            "highest-tile": 64,
+            "number_of_moves": 102
+        },
+        {
+            "random": 52,
+            "algo": 65,
+            "highest-tile": 64,
+            "number_of_moves": 117
+        },
+        {
+            "random": 89,
+            "algo": 133,
+            "highest-tile": 256,
+            "number_of_moves": 222
+        }
+    ],
+    "random_results": [
+        {
+            "number_of_moves": 150,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 89,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 296,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 290,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 169,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 187,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 153,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 93,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 94,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 113,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 70,
+            "highest-tile": 32
+        },
+        {
+            "number_of_moves": 181,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 138,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 98,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 276,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 473,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 99,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 175,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 125,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 101,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 131,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 170,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 81,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 87,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 147,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 126,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 168,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 204,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 110,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 119,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 88,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 125,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 159,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 152,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 181,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 178,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 131,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 80,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 82,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 112,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 100,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 94,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 135,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 125,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 186,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 112,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 178,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 98,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 156,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 132,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 64,
+            "highest-tile": 32
+        },
+        {
+            "number_of_moves": 186,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 115,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 171,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 155,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 162,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 129,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 188,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 88,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 59,
+            "highest-tile": 32
+        },
+        {
+            "number_of_moves": 117,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 107,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 187,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 154,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 135,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 68,
+            "highest-tile": 32
+        },
+        {
+            "number_of_moves": 133,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 154,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 117,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 105,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 112,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 58,
+            "highest-tile": 32
+        },
+        {
+            "number_of_moves": 142,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 129,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 97,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 104,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 129,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 194,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 153,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 171,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 127,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 123,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 83,
+            "highest-tile": 32
+        },
+        {
+            "number_of_moves": 154,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 130,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 82,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 97,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 160,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 140,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 140,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 95,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 104,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 99,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 194,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 91,
+            "highest-tile": 32
+        },
+        {
+            "number_of_moves": 135,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 141,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 135,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 156,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 177,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 149,
+            "highest-tile": 128
+        }
+    ],
+    "three_moves_results": [
+        {
+            "number_of_moves": 40,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 67,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 48,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 147,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 77,
+            "highest-tile": 512
+        },
+        {
+            "number_of_moves": 38,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 43,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 40,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 59,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 50,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 91,
+            "highest-tile": 512
+        },
+        {
+            "number_of_moves": 66,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 36,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 44,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 34,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 61,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 20,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 64,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 58,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 40,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 54,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 63,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 62,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 34,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 59,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 69,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 28,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 37,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 35,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 22,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 63,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 55,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 42,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 67,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 48,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 36,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 52,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 25,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 32,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 51,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 57,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 99,
+            "highest-tile": 512
+        },
+        {
+            "number_of_moves": 50,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 51,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 71,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 59,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 57,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 37,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 64,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 55,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 23,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 42,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 28,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 35,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 47,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 34,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 48,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 35,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 26,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 53,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 36,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 53,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 33,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 37,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 47,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 36,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 40,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 33,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 37,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 29,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 29,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 43,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 53,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 66,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 71,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 29,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 64,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 63,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 38,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 63,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 54,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 34,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 44,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 21,
+            "highest-tile": 64
+        },
+        {
+            "number_of_moves": 59,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 39,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 65,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 34,
+            "highest-tile": 128
+        },
+        {
+            "number_of_moves": 63,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 60,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 54,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 115,
+            "highest-tile": 512
+        }
+    ]
 }
