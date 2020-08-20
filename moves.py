@@ -1,3 +1,8 @@
+"""
+Desc: Check, how the matrix will look after moving up
+In: Array with actual situation on the board
+Out: List of operation - how many tiles on board, and how many tiles were merged
+"""
 def check_move_up(list_of_tiles_local):
     n = len(list_of_tiles_local)
     list_of_operation = {"merged": 0, "tiles_after_move": 0}
@@ -34,6 +39,12 @@ def check_move_up(list_of_tiles_local):
             j += 1
     return list_of_operation
     
+
+"""
+Desc: Check, how the matrix will look after moving left
+In: Array with actual situation on the board
+Out: List of operation - how many tiles on board, and how many tiles were merged
+"""
 def check_move_left(list_of_tiles_local):
     n = len(list_of_tiles_local)
     list_of_operation = {"merged": 0, "tiles_after_move": 0}
@@ -76,6 +87,12 @@ def check_move_left(list_of_tiles_local):
             j += 1
     return list_of_operation
 
+
+"""
+Desc: Check, how the matrix will look after moving right
+In: Array with actual situation on the board
+Out: List of operation - how many tiles on board, and how many tiles were merged
+"""
 def check_move_right(list_of_tiles_local):
     n = len(list_of_tiles_local)
     list_of_operation = {"merged": 0, "tiles_after_move": 0}
@@ -113,6 +130,11 @@ def check_move_right(list_of_tiles_local):
             j -= 1
     return list_of_operation
 
+"""
+Desc: Check, how the matrix will look after moving down
+In: Array with actual situation on the board
+Out: List of operation - how many tiles on board, and how many tiles were merged
+"""
 def check_move_down(list_of_tiles_local):
     n = len(list_of_tiles_local)
     list_of_operation = {"merged": 0, "tiles_after_move": 0}

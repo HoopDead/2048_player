@@ -6,8 +6,6 @@ import numpy as np
 from random import randint
 import json
 
-Game = True
-
 
 driver = webdriver.Chrome('/mnt/d/Programs/Projekty/2048_player/chromedriver.exe')
 driver.get('https://play2048.co/')
@@ -46,7 +44,7 @@ def check_if_game_over():
         driver.find_element_by_xpath('//a[contains(text(), "Try again")]').click()
         with open('results.json') as json_file: 
             data = json.load(json_file) 
-            temp = data['random_results']
+            temp = data['three_moves_results']
             temp.append(moves)
             write_json(data)
         moves["highest-tile"] = 2
@@ -56,28 +54,23 @@ def write_json(data, filename='results.json'):
     with open(filename,'w') as f: 
         json.dump(data, f, indent=4) 
 
-def random_move(window):
-    a = randint(1, 4)
-    if (a == 1):
-        window.send_keys(Keys.ARROW_LEFT)
-        print("Random move left")
-    if (a == 2):
-        window.send_keys(Keys.ARROW_RIGHT)
-        print("Random move right")
-    if (a == 3):
-        window.send_keys(Keys.ARROW_DOWN)
-        print("Random move down")
-    if (a == 4):
-        window.send_keys(Keys.ARROW_UP)
-        print("Random move up")
+Game = True
+
 
 if __name__ == "__main__":
     print("Im working!")
     moves = {"number_of_moves": 0, "highest-tile": 2}
     main_window = driver.find_element_by_tag_name("body")
     while Game:
+        main_window.send_keys(Keys.ARROW_LEFT)
+        time.sleep(0.1)
+        main_window.send_keys(Keys.ARROW_DOWN)
+        time.sleep(0.1)
+        main_window.send_keys(Keys.ARROW_RIGHT)
+        time.sleep(0.1)
+        main_window.send_keys(Keys.ARROW_DOWN)
+        time.sleep(0.1)
         moves["number_of_moves"] += 1
         moves["highest-tile"] = modify_list_of_tiles(get_values_from_tiles())
-        random_move(main_window)
-        time.sleep(0.2)
+        print(moves)
         check_if_game_over()

@@ -40,7 +40,11 @@ def modify_list_of_tiles(list_of_tiles_in):
         list_of_tile_informations[int(pos[0])-1][int(pos[1])-1] = int(value)
     return list_of_tile_informations
 
-
+"""
+Desc: Makes a random move
+In: WebElement that holds board
+Out: -
+"""
 def random_move(window):
     a = randint(1, 4)
     if (a == 1):
@@ -56,6 +60,12 @@ def random_move(window):
         window.send_keys(Keys.ARROW_UP)
         print("Random move up")
 
+"""
+Desc: Check, what moves are possible
+In: Dictionaries with number of tiles on board after move, and how many merged.
+Out: Dict with move_score, what move is the best
+TODO: Rework the algorithm for checking what move is possible 
+"""
 def check_moves(up_moves, down_moves, left_moves, right_moves, number_of_tiles_on_board):
     possible_moves = {"up": False, "down": False, "left": False, "right": False}
     moves_score = {"up": 0, "down": 0, "left": 0, "right": 0}
@@ -73,6 +83,12 @@ def check_moves(up_moves, down_moves, left_moves, right_moves, number_of_tiles_o
         moves_score["right"] = right_moves["merged"]
     return moves_score
 
+"""
+Desc: Make PROBABLY the best move, if any of moves are not possible, make random move
+In: Dictionary - move_score, and window, that holds webelement
+Out: -
+TODO: Rework the algorithm for checking what move is possible 
+"""
 def make_best_move(move_score, window):
     best_move = max(move_score, key=move_score.get)
     is_equal = all(value == 0 for value in move_score.values())

@@ -911,49 +911,9 @@
         {
             "number_of_moves": 95,
             "highest-tile": 64
-        },
-        {
-            "number_of_moves": 104,
-            "highest-tile": 64
-        },
-        {
-            "number_of_moves": 99,
-            "highest-tile": 64
-        },
-        {
-            "number_of_moves": 194,
-            "highest-tile": 128
-        },
-        {
-            "number_of_moves": 91,
-            "highest-tile": 32
-        },
-        {
-            "number_of_moves": 135,
-            "highest-tile": 64
-        },
-        {
-            "number_of_moves": 141,
-            "highest-tile": 128
-        },
-        {
-            "number_of_moves": 135,
-            "highest-tile": 128
-        },
-        {
-            "number_of_moves": 156,
-            "highest-tile": 128
-        },
-        {
-            "number_of_moves": 177,
-            "highest-tile": 128
-        },
-        {
-            "number_of_moves": 149,
-            "highest-tile": 128
         }
     ],
-    "three_moves_results": [
+    "four_moves_results": [
         {
             "number_of_moves": 40,
             "highest-tile": 64
@@ -1211,10 +1171,6 @@
             "highest-tile": 128
         },
         {
-            "number_of_moves": 47,
-            "highest-tile": 128
-        },
-        {
             "number_of_moves": 36,
             "highest-tile": 128
         },
@@ -1320,6 +1276,44 @@
         },
         {
             "number_of_moves": 115,
+            "highest-tile": 512
+        }
+    ],
+    "three_moves_results": [
+        {
+            "number_of_moves": 104,
+            "highest-tile": 512
+        },
+        {
+            "number_of_moves": 121,
+            "highest-tile": 512
+        },
+        {
+            "number_of_moves": 151,
+            "highest-tile": 512
+        },
+        {
+            "number_of_moves": 134,
+            "highest-tile": 512
+        },
+        {
+            "number_of_moves": 83,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 132,
+            "highest-tile": 512
+        },
+        {
+            "number_of_moves": 55,
+            "highest-tile": 256
+        },
+        {
+            "number_of_moves": 125,
+            "highest-tile": 512
+        },
+        {
+            "number_of_moves": 147,
             "highest-tile": 512
         }
     ]
